@@ -30,11 +30,13 @@ int main() {
 	cin >> N >> M;
 	int u[100], v[100], counter[100];
 	
+	//Input an undirected graph
 	Graph g(N);
 	for (int i = 0; i < M; i++) {
 		cin >> u[i] >> v[i];
 		g.addEdge(u[i], v[i]);
 	}
+	
 	for (int i = 0; i < N; i++) {
 		counter[i] = 0;
 		for (int j = 0; j < M; j++) {
