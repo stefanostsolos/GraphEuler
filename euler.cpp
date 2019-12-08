@@ -1,4 +1,4 @@
-#includeb<iostream> 
+#include <iostream> 
 #include <list> 
 using namespace std;
 
@@ -43,9 +43,8 @@ int main() {
 		}
 	}
 	
-	int result = 0;
-	int min = -1;
-	int max = -1;
+	int result = 0, min = -1, max = -1;
+	
 	for (int j = 0; j < N; j++) {
 		if (counter[j] % 2 != 0) {
 			result++;
